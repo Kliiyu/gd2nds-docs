@@ -1,0 +1,52 @@
+site_name: gd2nds
+site_description: Compile Godot 4.7 2D projects into Nintendo DS .nds ROMs
+site_url: https://kliiyu.github.io/gd2nds-docs/
+repo_url: https://github.com/Kliiyu/gd2nds
+repo_name: Kliiyu/gd2nds
+edit_uri: https://github.com/Kliiyu/gd2nds-docs/edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Overview: index.md
+  - Getting started: getting-started.md
+  - Architecture: architecture.md
+  - Roadmap: roadmap.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
