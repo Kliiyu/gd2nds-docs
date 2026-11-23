@@ -4,11 +4,4 @@ Documentation site for [gd2nds](https://github.com/Kliiyu/gd2nds), a compiler th
 
 Live site: https://kliiyu.github.io/gd2nds-docs/
 
-## Local preview
-
-```sh
-pip install -r requirements.txt
-mkdocs serve
-```
-
 Pushes to `main` are built and deployed to GitHub Pages by `.github/workflows/deploy.yml`.
